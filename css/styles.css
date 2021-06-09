@@ -66,6 +66,7 @@ header {
   border-width: 3px;
   border-style: solid;
   position: absolute;
+  z-index: 1000
 }
 
 header h1 {
