@@ -59,7 +59,7 @@ header {
 .david {
   height: 100px;
   width: 100px;
-  background-image: url(/davidtjomsland.github.io/images/david.jpg);
+  background-image: url(../images/david.jpg);
   background-size: cover;
   border-radius: 75%;
   border-color: rgb(90, 195, 250);
