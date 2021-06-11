@@ -1,0 +1,178 @@
+/* CSS Document */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+  	font-family: myFirstFont;
+  	src: url("../fonts/MomcakeThin.otf");
+}
+
+@font-face {
+  	font-family: mySecondFont;
+  	src: url("../fonts/MomcakeBold.otf");
+}
+
+.clearfix {
+	overflow: auto;
+  }
+  
+body {
+	background-image: url("../image/background6.png");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+.outer {
+	max-width: 1020px;
+	margin: auto;
+	padding: 5px;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.59);
+}
+
+span {
+	font-size: 18px;
+}
+
+h1, h2, h3 {
+	font-family: myFirstFont;
+	color: navajowhite;
+}
+
+p {
+	color: white;
+}
+header {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	font-size: 60px;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	list-style: none;
+}
+
+nav ul {
+	padding: 10px;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 30px;
+	margin: 0 30px 0 0;
+	font-family: MySecondFont;
+	border-radius: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	background-color: rgba(120,139,255,0.5);
+}
+
+.main {
+	width: 100%;
+	overflow: auto;
+	padding: 5px;
+}
+
+.main p {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+.aside-one {
+	float: left;
+	width: 33%;
+	padding: 5px;
+}
+
+aside p + a {
+	display: block;
+	text-decoration: none;
+	border: 5px double;
+	color: #ffffff;
+	background-color: #484848;
+	text-align: center;
+	font-size: 28px;
+	margin: 5px 5px 9px 5px;
+	padding: 15px 0;
+	position: relative;
+   }
+   
+h2 {
+	font-size: 30px;
+}
+
+.section {
+	float: left;
+	width: 67%;
+	padding: 5px 5px 5px 30px;
+}
+
+.div-one {
+	width: 100%;
+}
+
+.div-one h3 {
+	font-size: 45px;
+	color: rgb(177,172,204)
+}
+
+.article-one {
+	float: left;
+	width: 50%;
+	padding: 0 5px 5px 5px;
+}
+
+.article-div1 {
+	float: left
+}
+.article-div2 {
+	float: right;
+}
+
+.article-two {
+	float: left;
+	width: 50%;
+	padding: 0 5px 5px 20px;	
+}
+
+.aside-two {
+	float: left;
+	width: 50%;
+	padding: 0 5px 5px 20px;
+}
+
+footer {
+	height: 150px;
+	width: 100%;
+	background-color:rgba(0,0,0,0.80);
+	padding-top: 0;
+}
+
+footer li p {
+	color: grey;
+	font-family: MyFirstFont;
+	font-size: 20px;
+}
+
+footer ul {
+	margin-top: 0px;
+	list-style: none;
+	display: inline-block;
+	padding-left: 15%;
+}
