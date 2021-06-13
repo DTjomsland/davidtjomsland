@@ -201,7 +201,7 @@ nav li {
   .nav-menu {
     position: fixed;
     left: -200%;
-    top: 8rem;
+    top: 6.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 300px;

@@ -8,7 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-
 @font-face {
   font-family: myFirstFont;
   src: url("../fonts/lemon-milk-font/LemonMilkBold-gx2B3.otf");
@@ -32,7 +31,7 @@ header img {
 }
 
 header img:hover {
-  background-color: rgb(220, 189, 166);
+  background-color: rgb(214, 185, 162));
   border-radius: 75%;
   transition: 1.5s ease;
 }
@@ -42,8 +41,8 @@ h1 {
 }
 
 main {
-    max-width: 1920px;
-    margin: auto;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .gallery img {
@@ -92,10 +91,11 @@ main {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(220, 189, 166, 0.8);
-} 
+  background-color: rgba(214, 185, 162, 0.8);
+}
 
-.gallery:hover .overlay, .gallery:active .overlay {
+.gallery:hover .overlay,
+.gallery:active .overlay {
   opacity: 1;
 }
 
@@ -136,10 +136,8 @@ nav a {
 }
 
 a:hover {
-    color: rgb(220, 189, 166);
-    transition: 0.2s ease;
-    text-shadow: 2px 2px rgba(0, 0, 0, );
-  
+  color: rgb(214, 185, 162);
+  transition: 0.2s ease;
 }
 
 .hamburger {
@@ -176,6 +174,17 @@ a:hover {
     margin-top: 2.5rem;
     margin-right: 1rem;
   }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
 }
 
 .bar {
@@ -186,6 +195,7 @@ a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
+  border-radius: 10px;
 }
 
 .aboutme {
@@ -204,13 +214,12 @@ a:hover {
   height: 775px;
 }
 
-
 .about {
   width: 33%;
-  background-color: rgb(220, 189, 166);
+  background-color: rgb(214, 185, 162);
   padding: 100px 30px 30px 30px;
   height: auto;
-  margin-left: 10px;;
+  margin-left: 10px;
 }
 
 .about h2 {
@@ -221,14 +230,14 @@ a:hover {
 }
 
 .about p {
-  font-family: myThirdFont;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1200px) {
   .aboutme {
-    display:inline-block ;
+    display: inline-block;
   }
 
   .about {
@@ -237,8 +246,6 @@ a:hover {
     height: 250px;
     margin-left: 0;
     margin-top: 10px;
-    background-color: rgb(220, 189, 166);
-    
   }
 
   .about h2 {
@@ -292,41 +299,21 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  
 }
-  
-  
-
 
 #nameInput {
   float: left;
-  width: 45%;
+  width: 100%;
   height: 60px;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 10px;
   padding-left: 15px;
   border-color: white;
   border-style: solid;
-  font-family: mySecondFont;
+  font-family: 'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   margin-right: 10%;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: white;
-}
-
-#surnameInput {
-  width: 45%;
-  height: 60px;
-  border-width: 1px;
-  border-radius: 10px;
-  padding-left: 15px;
-  border-color: white;
-  border-style: solid;
-  font-family: mySecondFont;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
   margin-bottom: 15px;
   font-size: 18px;
   color: white;
@@ -334,14 +321,14 @@ a:hover {
 
 #emailInput {
   float: left;
-  width: 45%;
+  width: 100%;
   height: 60px;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 10px;
   padding-left: 15px;
   border-color: white;
   border-style: solid;
-  font-family: mySecondFont;
+  font-family: 'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   margin-right: 10%;
@@ -350,32 +337,16 @@ a:hover {
   color: white;
 }
 
-#phoneInput {
-  width: 45%;
-  height: 60px;
-  border-width: 1px;
-  border-radius: 10px;
-  padding-left: 15px;
-  border-color: white;
-  border-style: solid;
-  font-family: mySecondFont;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
 #questionInput {
   width: 100%;
   height: 120px;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 10px;
   padding-top: 15px;
   padding-left: 15px;
   border-color: white;
   border-style: solid;
-  font-family: mySecondFont;
+  font-family: 'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   font-size: 18px;
@@ -391,18 +362,19 @@ a:hover {
   color: white;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: grey;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: grey;
 }
 
 ::placeholder {
   color: grey;
 }
-
 
 .contact input {
   border-color: white;
@@ -412,14 +384,14 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   color: white;
-  font-family: mySecondFont;
+  font-family: 'Times New Roman', Times, serif;
   width: 90px;
   height: 40px;
   font-size: 18px;
 }
 
 .contact input:hover {
-  background-color: rgb(220, 189, 166);
+  background-color: rgb(214, 185, 162);
   color: black;
 }
 
@@ -454,17 +426,17 @@ a:hover {
 }
 
 @media screen and (max-width: 475px) {
-    .contactContainer {
-      background-image: url(../images/backstreet-mobile.png);
-    }
-    .contact {
-        width: 90%;
-    }
+  .contactContainer {
+    background-image: url(../images/backstreet-mobile.png);
   }
+  .contact {
+    width: 90%;
+  }
+}
 
 .contact h2 {
   text-align: center;
-  font-family: mySecondFont;
+  font-family: myThirdFont;
   color: white;
 }
 
@@ -476,7 +448,7 @@ footer {
   clear: both;
   width: 100%;
   height: 150px;
-  background-color: rgb(97, 176, 152);
+  background-color: rgb(78, 147, 138);
   margin-top: -6px;
 }
 
@@ -491,17 +463,13 @@ footer li {
   padding: 25px 30px 25px 0;
 }
 
-
-
-
- .facebook:hover {
-    border-radius: 75px;
-    background-color: rgb(24,119,242);
+.facebook:hover {
+  border-radius: 75px;
+  background-color: rgb(24, 119, 242);
 }
 
 .instagram:hover {
-    background-image: url(../images/gradient.png);
-    background-size: cover;
-    border-radius: 25px;
-
-    }
+  background-image: url(../images/gradient.png);
+  background-size: cover;
+  border-radius: 25px;
+}
