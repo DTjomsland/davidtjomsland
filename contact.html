@@ -58,13 +58,18 @@
     </div>
   </nav>
   <main>
-    <div class="outer">
+    
+    
+    <div class="contactContainer">
+      <h2>Contact</h2>
       <div class="contact">
-        
-       
-          
-          
-
+        <form id="contact-form" method="post" action="contactform.php">
+        <input name="name" type="text" class="nameInput" placeholder="Your Name"  required>
+        <input name="email" type="email" class="emailInput" placeholder="email"  required>
+        <textarea name="message" class="questionInput" placeholder="Message" 
+        required></textarea>
+        <input type="submit" class="inputButton" value="Send">
+        </form>
       </div>
     </div>
   </main>
