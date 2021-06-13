@@ -302,7 +302,7 @@ a:hover {
   }
 }
 
-#nameInput {
+.nameInput {
   float: left;
   width: 100%;
   height: 60px;
@@ -320,7 +320,7 @@ a:hover {
   color: white;
 }
 
-#emailInput {
+.emailInput {
   float: left;
   width: 100%;
   height: 60px;
@@ -338,7 +338,7 @@ a:hover {
   color: white;
 }
 
-#questionInput {
+.questionInput {
   width: 100%;
   height: 120px;
   border-width: 2px;
@@ -355,7 +355,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
-#questionInput textarea {
+.questionInput textarea {
   vertical-align: top;
 }
 
@@ -377,7 +377,8 @@ a:hover {
   color: rgb(214, 214, 214);
 }
 
-.contact input {
+
+.inputButton {
   border-color: white;
   border-style: solid;
   border-width: 2px;
