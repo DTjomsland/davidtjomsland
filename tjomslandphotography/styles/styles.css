@@ -40,81 +40,6 @@ h1 {
   display: none;
 }
 
-main {
-  max-width: 1920px;
-  margin: auto;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.responsive {
-  padding: 5px 5px;
-  float: left;
-  width: 33.33%;
-  position: relative;
-}
-@media only screen and (max-width: 1000px) {
-  .responsive {
-    width: 49.99999%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.galleryImage {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(214, 185, 162, 0.8);
-}
-
-.no-overlay {
-  display: none;
-}
-
-.gallery:hover .overlay,
-.gallery:active .overlay {
-  opacity: 1;
-}
-
-.description {
-  color: white;
-  font-size: 30px;
-  font-family: mySecondFont;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 nav ul {
   list-style: none;
   margin: 0 2px;
@@ -200,6 +125,108 @@ a:hover {
   background-color: #101010;
   border-radius: 10px;
 }
+
+
+main {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+
+.loading {
+  width: 635px;
+  height: 422px;
+  background-image: linear-gradient(
+    90deg,
+    #e4e4e4 0%,
+    #f1f1f1 40%,
+    #ededed 60%,
+    #e4e4e4 100%
+  );
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  animation: animatedBackground 5s linear infinite;
+}
+
+.responsive {
+  padding: 5px 5px;
+  float: left;
+  width: 33.33%;
+  position: relative;
+}
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 49.99999%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.galleryImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(214, 185, 162, 0.8);
+}
+
+.no-overlay {
+  display: none;
+}
+
+.gallery:hover .overlay,
+.gallery:active .overlay {
+  opacity: 1;
+}
+
+.description {
+  color: white;
+  font-size: 30px;
+  font-family: mySecondFont;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 
 .aboutme {
   display: flex;
@@ -407,7 +434,7 @@ a:hover {
   background-image: url(../images/backalley-full.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 60% 50%;
   width: 100%;
   height: 775px;
 }
@@ -421,17 +448,9 @@ a:hover {
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .contactContainer {
-    background-image: url(../images/backstreet-mobile.png);
-    background-position: center;
-  }
-}
+
 
 @media screen and (max-width: 475px) {
-  .contactContainer {
-    background-image: url(../images/backstreet-mobile.png);
-  }
   .contact {
     width: 90%;
   }
