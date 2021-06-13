@@ -31,7 +31,7 @@ header img {
 }
 
 header img:hover {
-  background-color: rgb(214, 185, 162));
+  background-color: rgb(214, 185, 162);
   border-radius: 75%;
   transition: 1.5s ease;
 }
@@ -59,7 +59,6 @@ main {
 @media only screen and (max-width: 1000px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
   }
 }
 
@@ -92,6 +91,10 @@ main {
   opacity: 0;
   transition: 0.5s ease;
   background-color: rgba(214, 185, 162, 0.8);
+}
+
+.no-overlay {
+  display: none;
 }
 
 .gallery:hover .overlay,
@@ -364,16 +367,16 @@ a:hover {
 
 ::-webkit-input-placeholder {
   /* Edge */
-  color: grey;
+  color: rgb(214, 214, 214);
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: grey;
+  color: rgb(214, 214, 214);
 }
 
 ::placeholder {
-  color: grey;
+  color: rgb(214, 214, 214);
 }
 
 .contact input {
@@ -391,7 +394,8 @@ a:hover {
 }
 
 .contact input:hover {
-  background-color: rgb(214, 185, 162);
+  background-color: white;
+  border-color: black;
   color: black;
 }
 
@@ -431,6 +435,19 @@ a:hover {
   }
   .contact {
     width: 90%;
+  }
+  .overlay {
+    display: none;
+  }
+
+  .no-overlay {
+    display: block;
+    background-color: rgb(214, 185, 162);
+    color: white;
+    font-family: mySecondFont;
+    text-align: center;
+    margin-top: 1px;
+    padding: 3px;
   }
 }
 
