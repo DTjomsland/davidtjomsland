@@ -137,36 +137,13 @@ main {
   height: auto;
 }
 
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1000px 0;
-  }
-}
-
-.loading {
-  width: 635px;
-  height: 422px;
-  background-image: linear-gradient(
-    90deg,
-    #e4e4e4 0%,
-    #f1f1f1 40%,
-    #ededed 60%,
-    #e4e4e4 100%
-  );
-  background-position: 0px 0px;
-  background-repeat: repeat;
-  animation: animatedBackground 5s linear infinite;
-}
-
 .responsive {
   padding: 5px 5px;
   float: left;
   width: 33.33%;
   position: relative;
 }
+
 @media only screen and (max-width: 1000px) {
   .responsive {
     width: 49.99999%;
@@ -183,12 +160,6 @@ main {
   content: "";
   display: table;
   clear: both;
-}
-
-.galleryImage {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .overlay {
